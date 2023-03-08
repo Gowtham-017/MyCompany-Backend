@@ -34,12 +34,10 @@ public class EmpService {
 		return e.saveAndFlush(e1);
 	}
 	
-	//delete details
-//	public void deleteDetail(int empid) {
-//		e.deleteById(empid);
-//	}
-	public void deleteDetail(EmpDetails e2) {
-		e.delete(e2);;
+	//delete details	
+
+	public void deleteDetail(int empid) {
+		e.deleteById(empid);
 	}
 	
 	//sorting

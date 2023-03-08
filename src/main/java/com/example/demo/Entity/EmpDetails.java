@@ -1,19 +1,27 @@
 package com.example.demo.Entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="EmpDetails")
+@Table(name="EmployerDetails")
 public class EmpDetails {
 	@Id
+	@Column(name="empid")
 	private int empid;
+	@Column(name="name")
 	private String name;
+	@Column(name="salary")
 	private int salary;
+	@Column(name="role")
 	private String role;
+	@Column(name="experience")
 	private int experience;
+	@Column(name="phone")
 	private long phone;
+	@Column(name="email")
 	private String email;
 	
 	
